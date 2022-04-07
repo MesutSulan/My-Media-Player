@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "799014378904",
+    "firebase_url": "https://kalitebiziz-guzelninniler.firebaseio.com",
+    "project_id": "kalitebiziz-guzelninniler",
+    "storage_bucket": "com-biyotek-sulan-merosongs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799014378904:android:3a1287e1fbcdbe3e75dfed",
+        "android_client_info": {
+          "package_name": "com.biyotek.sulan.merosongs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "799014378904-80db1geavuc9sj1u39q5t4tb3k2c55k0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgjY7hadeRddkey8h4xcddH6FqEb9lPbY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "799014378904-80db1geavuc9sj1u39q5t4tb3k2c55k0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

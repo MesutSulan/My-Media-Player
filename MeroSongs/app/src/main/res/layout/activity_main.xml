@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ark"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+
+    <LinearLayout
+        android:id="@+id/linust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear"
+        android:layout_marginBottom="56dp"
+        android:orientation="vertical"
+        android:paddingLeft="13dp">
+
+        <TextView
+            android:id="@+id/tvbaslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="PLAYİNG NOW"
+            android:textColor="#ffff"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/l"
+            android:layout_width="371dp"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/linear"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginBottom="167dp"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="456dp" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/reklam"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:background="#126028"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <Button
+            android:id="@+id/set"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/ic_menu_call"
+            android:shadowColor="#c1d608" />
+
+
+        <Button
+            android:id="@+id/bshare"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:background="?attr/actionModeShareDrawable" />
+
+        <Button
+            android:id="@+id/bbefore"
+            android:layout_width="113dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_media_rew" />
+
+        <Button
+            android:id="@+id/bpause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ac" />
+
+        <Button
+            android:id="@+id/bnext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_media_ff" />
+
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/reklam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </com.google.android.gms.ads.AdView>
+
+
+
+</RelativeLayout>
